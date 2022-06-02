@@ -1,11 +1,10 @@
 import React, {Fragment} from 'react';
-//import { Notification, Section } from 'rbx';
 import './App.scss';
-import Header from './components/header';
+import Routers from './routes';
 
 const App = () => (
   <Fragment>
-    <Header />
+    <Routers />
   </Fragment>
 )
 
