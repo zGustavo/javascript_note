@@ -23,7 +23,7 @@ function RegisterForm() {
 
     
     if(redirectToLogin == true)
-        return <Navigate to={{pathname: "/login"}}/>
+        return <Navigate to={"/login"}/>
 
     return (
         <Fragment>
@@ -70,8 +70,7 @@ function RegisterForm() {
                             <Control>
                                 <Column.Group breakpoint="mobile">
                                     <Column>
-                                        <a className="button is-white has-text-custom-purple"
-                                        onClick={e => setRedirectToLogin(true)}>Login or</a>
+                                        <a onClick={e => setRedirectToLogin(true)} className="button is-white has-text-custom-purple">Login or</a>
                                     </Column>
                                     <Column>
                                         <Button color="custom-purple" outlined>Register</Button>
